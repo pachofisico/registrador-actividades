@@ -1,0 +1,137 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.MenuButton{
+  background-color:rgb(255, 255, 255);
+  margin-left: 2px;
+  margin-right: 10px;
+  font-size:larger;
+  padding: 0.5%;
+  display:inline-flex;
+  justify-content:center;
+}
+
+.Navigation {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Header {
+  background-color: #afb2b8;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 255, 255);
+}
+
+.Sesion{
+  background-color:rgb(190, 190, 190);
+  padding: 2%;
+  width:  20%;
+  height:fit-content;
+  
+  padding: 0.5%;
+  margin: 2%;
+  display:inline-block;
+  justify-content:center;
+}
+
+.Titulo_Sesion{
+  font-size: larger;
+  font-weight: bold;
+  color: rgb(54, 54, 54);
+  display:contents;
+
+}
+
+.Texto_sesion{
+  background-color: rgb(240, 240, 240);
+  width: 60%;
+  padding: 1px;
+  margin: 1px;
+  margin-left: 8%;
+  border-radius: 5px;
+}
+
+.Boton_sesion{
+  background-color: rgb(66, 65, 65);
+  width: 30%;
+  padding: 1px;
+  margin: 10px;
+  margin-left: 50%;
+  border-radius: 5px;
+  color: aliceblue;
+}
+
+.RegistradorDeActividades{
+  background-color:rgb(190, 190, 190);
+  padding: 2%;
+  width:  50%;
+  height:fit-content;
+  
+  padding: 0.5%;
+  margin: 2%;
+  display:inline-block;
+  justify-content:center;
+}
+
+.TablaActividades{
+  background-color:rgb(190, 190, 190);
+  padding: 2%;
+  width:  80%;
+  height:fit-content;
+  
+  padding: 0.5%;
+  margin: 2%;
+  display:inline-block;
+  justify-content:center;
+}
+
+
+.Texto_actividad{
+  background-color: rgb(240, 240, 240);
+  width: 400px;
+  padding: 1px;
+  margin: 1px;
+  margin-left: 8%;
+  font-size: larger;
+  border-radius: 5px;
+}
+
+.TextoActividadRealizada{
+  background-color: rgb(240, 240, 240);
+  width: 400px;
+  padding: 1px;
+  margin: 1px;
+  margin-left: 8%;
+  font-size: larger;
+  border-radius: 5px;
+}
+
+
+.Footer {
+  background-color: #afb2b8;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size:large;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  
+}
+
+
+
