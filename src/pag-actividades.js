@@ -3,7 +3,7 @@ import './App.css';
 import Navigation from './components/navigation';
 import Header from './components/header';
 import Footer from './components/footer';
-import ListadorDeActividades from './listador-de-actividades'; 
+import ListadorDeActividades from './components/listador-de-actividades'; 
 
 
 function PaginaListarActividades() {
