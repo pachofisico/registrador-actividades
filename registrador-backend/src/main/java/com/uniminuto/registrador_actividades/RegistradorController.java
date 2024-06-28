@@ -15,6 +15,7 @@ public class RegistradorController {
 
     @PostMapping("/registrar-usuario")
     public ResponseEntity<String> registerUser(@Validated @RequestBody String dato){
+        System.out.println("Registrando usuario " + dato);
         return new ResponseEntity<>(dato, HttpStatus.CREATED);
     }
 
