@@ -2,8 +2,11 @@
 
 # dependencies
 /node_modules
+registrador-front/node_modules/
 /.pnp
+.registrador-front/pnp
 .pnp.js
+.registrador-front/.pnp.js
 
 # testing
 /coverage

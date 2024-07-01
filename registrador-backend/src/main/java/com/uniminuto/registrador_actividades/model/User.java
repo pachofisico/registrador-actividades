@@ -1,5 +1,6 @@
 package com.uniminuto.registrador_actividades.model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -21,7 +22,10 @@ public class User {
 
     public String email;
 
-    public String name;
+    @Column(name = "user-name")
+    public String userName;
+
+    public String password;
 
 
 

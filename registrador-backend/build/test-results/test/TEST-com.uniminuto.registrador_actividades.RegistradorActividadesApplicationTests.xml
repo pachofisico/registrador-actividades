@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.uniminuto.registrador_actividades.RegistradorActividadesApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-07-01T03:28:51" hostname="BALERION" time="0.388">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.uniminuto.registrador_actividades.RegistradorActividadesApplicationTests" time="0.388"/>
+  <system-out><![CDATA[22:28:45.865 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.uniminuto.registrador_actividades.RegistradorActividadesApplicationTests]: RegistradorActividadesApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:28:45.994 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.uniminuto.registrador_actividades.RegistradorActividadesApplication for test class com.uniminuto.registrador_actividades.RegistradorActividadesApplicationTests
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2024-06-30T22:28:46.363-05:00  INFO 14356 --- [registrador-actividades] [    Test worker] r.RegistradorActividadesApplicationTests : Starting RegistradorActividadesApplicationTests using Java 17.0.9 with PID 14356 (started by pacho in C:\Programacion\registrador-actividades\registrador-backend)
+2024-06-30T22:28:46.364-05:00  INFO 14356 --- [registrador-actividades] [    Test worker] r.RegistradorActividadesApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-06-30T22:28:46.914-05:00  INFO 14356 --- [registrador-actividades] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-30T22:28:47.040-05:00  INFO 14356 --- [registrador-actividades] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115 ms. Found 2 JPA repository interfaces.
+2024-06-30T22:28:47.564-05:00  INFO 14356 --- [registrador-actividades] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-30T22:28:47.622-05:00  INFO 14356 --- [registrador-actividades] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-30T22:28:47.654-05:00  INFO 14356 --- [registrador-actividades] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-30T22:28:47.924-05:00  INFO 14356 --- [registrador-actividades] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-30T22:28:47.943-05:00  INFO 14356 --- [registrador-actividades] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-30T22:28:48.835-05:00  INFO 14356 --- [registrador-actividades] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@57b63253
+2024-06-30T22:28:48.837-05:00  INFO 14356 --- [registrador-actividades] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-30T22:28:48.854-05:00  WARN 14356 --- [registrador-actividades] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-30T22:28:48.855-05:00  WARN 14356 --- [registrador-actividades] [    Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-06-30T22:28:49.472-05:00  INFO 14356 --- [registrador-actividades] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-30T22:28:50.009-05:00  INFO 14356 --- [registrador-actividades] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-30T22:28:50.485-05:00  WARN 14356 --- [registrador-actividades] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-30T22:28:51.271-05:00  INFO 14356 --- [registrador-actividades] [    Test worker] r.RegistradorActividadesApplicationTests : Started RegistradorActividadesApplicationTests in 5.121 seconds (process running for 6.153)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

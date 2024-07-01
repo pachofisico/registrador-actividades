@@ -1,7 +1,7 @@
 
 import './App.css';
 import Home from './home';
-import RegistrarActividad from './registrar-actividad'
+import RegistrarActividad from './components/registrar-actividad'
 import PaginaListarActividades from './pag-actividades'; 
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 

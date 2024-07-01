@@ -28,30 +28,39 @@ public class RegistradorController {
     ActivitiesService activitiesService;
 
     @PostMapping("/registrar-usuario")
-    public ResponseEntity<User> registerUser(@Validated @RequestBody User userRequest){
+    public ResponseEntity<String> registerUser(@Validated @RequestBody User userRequest){
         System.out.println("Registrando usuario " + userRequest);
-        user = userService.createUser(userRequest);
-        return new ResponseEntity<>(user, HttpStatus.CREATED);
+        try {
+            user = userService.createUser(userRequest);
+            return new ResponseEntity<>("Registro exitoso!", HttpStatus.CREATED);
+
+        } catch (RuntimeException e) {
+            return new ResponseEntity<>("Error al registrar el usuario", HttpStatus.BAD_REQUEST);
+        }
     }
 
     @PostMapping("/login")
-    public ResponseEntity<String> login(@Validated @RequestBody String dato){
-        return new ResponseEntity<>(dato, HttpStatus.CREATED);
+    public ResponseEntity<String> login(@Validated @RequestBody User userToLogin){
+        try {
+            String validationResponse = userService.validateUser(userToLogin);
+            return new ResponseEntity<>(validationResponse, HttpStatus.CREATED);
+
+        } catch (RuntimeException e) {
+            return new ResponseEntity<>("Error al iniciar sesión", HttpStatus.BAD_REQUEST);
+        }
     }
 
 
     @PostMapping("/actividades")
-    public ResponseEntity<Activities> registerActivity(@Validated @RequestBody Activities activityRequest){
+    public ResponseEntity<String> registerActivity(@Validated @RequestBody Activities activityRequest){
         activityResponse = activitiesService.registerActivity(activityRequest);
-        return new ResponseEntity<>(activityResponse, HttpStatus.CREATED);
-
+        return new ResponseEntity<>("Actividad registradas exitosamente.", HttpStatus.CREATED);
     }
 
     @GetMapping("/actividades/{email}")
     public ResponseEntity<List<Activities>> register(@Validated @PathVariable String email){
         List<Activities> activitiesList = activitiesService.getAllActivities(email);
         return new ResponseEntity<>(activitiesList, HttpStatus.OK);
-
     }
 
 }
